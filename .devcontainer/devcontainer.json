@@ -1,1 +1,1 @@
-{\n  "name": "Shopify AI Policy Generator",\n  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",\n  "forwardPorts": [8081],\n  "postCreateCommand": "bash .devcontainer/post-create.sh",\n  "customizations": {\n    "vscode": {\n      "extensions": ["ms-azuretools.vscode-docker"]\n    }\n  }\n}
+{ "name": "Shopify AI Policy Generator", "dockerFile": "Dockerfile", "settings": { "terminal.integrated.shell.linux": "bash" }, "postCreateCommand": "chmod +x ./post-create.sh && ./post-create.sh", "remoteUser": "vscode" }
